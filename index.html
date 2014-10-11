@@ -2,30 +2,71 @@
 <head>
 <style type="text/css">
 
-@page { size:11in 8.5in; margin: 2cm }
-div {
-  margin: 1px;
-  page-break-after: always;
-  text-align: center;
-  padding: 20px;
-  font-size: 2em;
-  border: 2px solid black;
-  border-radius: 3px;
-  height: 100%;
-  width: 100%;
+body {
+  margin: 0;
+  padding: 0;
+  width: 8.5in;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-
 }
+
+@page {
+  size: 8.5in 11in;
+  margin: 0;
+  /*margin: 2cm;*/
+}
+
+div {
+  display: block;
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 3in;
+  height: 5in;
+  overflow: hidden;
+
+  border: 0.05in solid black;
+  border-radius: 0.1in;
+  padding: 0.05in;
+
+  text-align: center;
+}
+div:nth-child(odd) {
+  margin-left: 1.23in;
+  margin-right: 0.02in;
+  /*margin: 0.25in 0.02in 0.25in 1.23in;*/
+  clear: both;
+}
+div:nth-child(even) {
+  margin-left: 0.02in;
+  margin-right: 1.23in;
+  /*margin: 0.25in 1.23in 0.25in 0.02in; */
+}
+div:nth-child(4n+1),
+div:nth-child(4n+2) {
+  margin-top: 0.48in;
+  margin-bottom: 0.02in;
+}
+div:nth-child(4n+3),
+div:nth-child(4n+0) {
+  margin-top: 0.02in;
+  margin-bottom: 0.48in;
+}
+div:nth-child(4n+0) {
+  page-break-after: always;
+  /*clear: both;*/
+  /*margin-bottom: 0.5in;*/
+}
+
+
 </style>
-</head>
-<body>
-
-
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
 <script src="tabletop.js"></script>
 <script src="pii.js"></script>
 <script src="datasets.js"></script>
+</head>
+<body>
+
 </body>
 </html>
