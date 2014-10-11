@@ -20,10 +20,10 @@ $(document).ready(function() {
     console.log(data);
     $.each(data, function(i,row) {
       $("body").append(
-        "<div>"+
+        "<div><table><tr><td>"+
           "<p>"+row['category']+"</p>"+
           "<h1>"+row['dataset']+"</h1>"+
-        "</div>"
+        "</td></tr></table></div>"
         );
     });
   }

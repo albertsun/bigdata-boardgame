@@ -10,12 +10,12 @@ $(document).ready(function() {
     console.log(tabletop);
     $.each(data, function(i,row) {
       $("body").append(
-        "<div>"+
+        "<div><table><tr><td>"+
           "<p>"+row['category']+"</p>"+
           "<p><b>"+row['dataset']+"</b></p>"+
           "<p>"+row['piicard']+"</p>"+
           "<p><i>"+(row['description'] ? row['description'] : '&nbsp;')+"</i></p>"+
-        "</div>"
+        "</td></tr></table></div>"
         );
     });
   }
