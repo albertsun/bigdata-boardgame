@@ -1,7 +1,6 @@
 // var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=0AmYzu_s7QHsmdDNZUzRlYldnWTZCLXdrMXlYQzVxSFE&output=html';
 var public_spreadsheet_url = "https://docs.google.com/spreadsheets/d/1-Hod344h0PELAqZ4Hicp3APU85NT56cVTp8YqlukdQc/pubhtml";
 
-
 $(document).ready(function() {
 
   function renderRows(data,tabletop) {
@@ -20,10 +19,12 @@ $(document).ready(function() {
     console.log(data);
     $.each(data, function(i,row) {
       $("body").append(
-        "<div><table><tr><td>"+
+        "<div><table class='front'><tr><td><span>"+
           "<p>"+row['category']+"</p>"+
           "<h1>"+row['dataset']+"</h1>"+
-        "</td></tr></table></div>"
+        "</span></td></tr></table>"+
+        "<table class='back'><tr><td><span>&nbsp;</span></td></tr></table>"+
+        "</div>"
         );
     });
   }

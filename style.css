@@ -1,0 +1,117 @@
+@page {
+  size: 11in 8.5in;
+  /*margin: 0;*/
+  margin-top: 0.65in;
+  margin-bottom: 0.65in;
+  padding: 0;
+  /*margin: 2cm;*/
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 11in;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Rockwell',serif;
+  /*font-family: 'Rockwell Std','Rockwell',serif;*/ /* this is the light version of Rockwell */
+}
+
+div {
+  display: block;
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /*width: 3in;*/
+  /*height: 5in;*/
+  /*margin-top: 0.65in;*/
+  margin-bottom: 0.65in;
+  text-align: center;
+}
+/*div:nth-child(odd) {
+  margin-left: 1.23in;
+  margin-right: 0.02in;
+}
+div:nth-child(even) {
+  margin-left: 0.02in;
+  margin-right: 1.23in;
+}
+div:nth-child(4n+1),
+div:nth-child(4n+2) {
+  margin-top: 0.48in;
+  margin-bottom: 0.02in;
+}
+div:nth-child(4n+3),
+div:nth-child(4n+0) {
+  margin-top: 0.02in;
+  margin-bottom: 0.48in;
+}*/
+
+div:nth-child(4n+1) {
+  margin-left: 0.44in;
+  margin-right: 0.02in;
+}
+div:nth-child(4n+2),
+div:nth-child(4n+3) {
+  margin-left: 0.02in;
+  margin-right: 0.02in; 
+}
+div:nth-child(4n+0) {
+  margin-left: 0.02in;
+  margin-right: 0.44in;
+  page-break-after: always;
+}
+div:nth-child(4n+1) {
+  clear: both;
+  /*page-break-before: always;*/
+}
+/*div:nth-child(4n+0) {
+  page-break-after: always;
+}*/
+table {
+  /*height: 100%;*/
+  /*width: 100%;*/
+  word-wrap: break-word;
+  page-break-inside: avoid;
+}
+td {
+  /*max-height: 3.3in;*/
+}
+table, tr, td {
+  margin: 0;
+  text-align: center;
+  padding: 0;
+  border-collapse: collapse;
+}
+table span {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 2.5in;
+  height: 3.5in;
+  overflow: hidden;
+  border: 0.05in solid black;
+  border-radius: 0.05in;
+  padding: 0.05in;
+}
+table.back span {
+  background-color: #EFEFEF;
+}
+table.front {
+  margin-bottom: 0.05in;
+}
+table.back {
+  margin-top: 0.05in;
+  
+}
+td {
+  vertical-align: middle;
+}
+table p,
+table h1 {
+  max-width: 2.3in;
+}
