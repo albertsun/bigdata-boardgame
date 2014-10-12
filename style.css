@@ -94,14 +94,17 @@ table span {
   padding: 0.2in;
 }
 table.back span {
-  background-color: #EFEFEF;
+  /*background-color: #EFEFEF;*/
+  background: url('rockwell-comma.svg') repeat;
+  background-size: 0.15in auto;
+  background-position: 0.05in 0.05in;
 }
 table.front {
   margin-bottom: 0.05in;
 }
 table.back {
   margin-top: 0.05in;
-  
+  content: ",";
 }
 td {
   vertical-align: middle;
