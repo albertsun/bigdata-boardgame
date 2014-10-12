@@ -100,19 +100,23 @@ table.back span {
   background-position: 0.03in 0.02in;
   position: relative;
 }
-table.back label {
+table.back p {
   background-color: #FFFFFF;
-  text-transform: uppercase;
   position: absolute;
   padding: 0.1in 0;
-  font-size: .3in;
+  font-size: 0.15in;
 }
-.pii-card table.back label {
+table.back label {
+  text-transform: uppercase;
+  font-size: .3in;
+  display: block;
+}
+.pii-card table.back p {
   width: 1in;
   left: 0.70in;
-  top: 1.40in;
+  top: 1.25in;
 }
-.dataset-card table.back label {
+.dataset-card table.back p {
   width: 1.6in;
   left: 0.40in;
   top: 1.40in;

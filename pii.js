@@ -14,11 +14,17 @@ $(document).ready(function() {
           "<table class='inner'><tr><td><p class='pii'>"+row['piicard']+"</p>"+
           "<p class='description'><i>"+(row['description'] ? row['description'] : '&nbsp;')+"</i></p></td></tr></table>"+
         "</span></td></tr></table>"+
-        "<table class='back'><tr><td><span><label>PII</label></span></td></tr></table>"+
+        "<table class='back'><tr><td><span>"+
+        "<p><label>PII</label>"+
+        row['category']+
+        "</p>"+
+        "</span></td></tr></table>"+
         "</div>"
         );
     });
   }
+
+
   Tabletop.init( { key: public_spreadsheet_url,
                    callback: renderRows,
                    simpleSheet: true } )
