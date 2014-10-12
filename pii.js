@@ -4,7 +4,7 @@ var public_spreadsheet_url = "https://docs.google.com/spreadsheets/d/1-Hod344h0P
 $(document).ready(function() {
 
   function renderRows(data,tabletop) {
-    console.log(data);
+    console.log(JSON.stringify(data));
     console.log(tabletop);
     $.each(data, function(i,row) {
       $("body").append(
