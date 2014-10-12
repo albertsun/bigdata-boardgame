@@ -73,13 +73,8 @@ div:nth-child(4n+1) {
   page-break-after: always;
 }*/
 table {
-  /*height: 100%;*/
-  /*width: 100%;*/
   word-wrap: break-word;
   page-break-inside: avoid;
-}
-td {
-  /*max-height: 3.3in;*/
 }
 table, tr, td {
   margin: 0;
@@ -96,7 +91,7 @@ table span {
   overflow: hidden;
   border: 0.05in solid black;
   border-radius: 0.05in;
-  padding: 0.05in;
+  padding: 0.2in;
 }
 table.back span {
   background-color: #EFEFEF;
@@ -113,5 +108,34 @@ td {
 }
 table p,
 table h1 {
-  max-width: 2.3in;
+  max-width: 2in;
+}
+.pii-card table.inner {
+  height: 2.68in;
+  width: 2in;
+}
+.dataset-card table.inner {
+  height: 2.85in;
+  width: 2in;
+}
+
+.dataset-card .category,
+.pii-card .category {
+  font-style: italic;
+  font-size: 0.15in;
+  height: 0.15in;
+  text-align: left;
+  margin: 0;
+}
+.pii-card .dataset {
+  font-size: .12in;
+  height: .15in;
+  text-align: left;
+  margin: .02in 0 0 0;
+}
+.pii-card .pii {
+  font-size: 1.25em;
+}
+.pii-card .description {
+
 }

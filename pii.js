@@ -8,11 +8,11 @@ $(document).ready(function() {
     console.log(tabletop);
     $.each(data, function(i,row) {
       $("body").append(
-        "<div><table class='front'><tr><td><span>"+
-          "<p>"+row['category']+"</p>"+
-          "<p><b>"+row['dataset']+"</b></p>"+
-          "<p>"+row['piicard']+"</p>"+
-          "<p><i>"+(row['description'] ? row['description'] : '&nbsp;')+"</i></p>"+
+        "<div class='pii-card'><table class='front'><tr><td><span>"+
+          "<p class='category'>"+row['category']+"</p>"+
+          "<p class='dataset'><b>"+row['dataset']+"</b></p>"+
+          "<table class='inner'><tr><td><p class='pii'>"+row['piicard']+"</p>"+
+          "<p class='description'><i>"+(row['description'] ? row['description'] : '&nbsp;')+"</i></p></td></tr></table>"+
         "</span></td></tr></table>"+
         "<table class='back'><tr><td><span>&nbsp;</span></td></tr></table>"+
         "</div>"

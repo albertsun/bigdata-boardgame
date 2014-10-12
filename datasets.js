@@ -19,9 +19,9 @@ $(document).ready(function() {
     console.log(data);
     $.each(data, function(i,row) {
       $("body").append(
-        "<div><table class='front'><tr><td><span>"+
-          "<p>"+row['category']+"</p>"+
-          "<h1>"+row['dataset']+"</h1>"+
+        "<div class='dataset-card'><table class='front'><tr><td><span>"+
+          "<p class='category'>"+row['category']+"</p>"+
+          "<table class='inner'><tr><td><h1>"+row['dataset']+"</td></tr></h1></table>"+
         "</span></td></tr></table>"+
         "<table class='back'><tr><td><span>&nbsp;</span></td></tr></table>"+
         "</div>"
