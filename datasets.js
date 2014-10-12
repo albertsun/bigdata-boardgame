@@ -23,7 +23,7 @@ $(document).ready(function() {
           "<p class='category'>"+row['category']+"</p>"+
           "<table class='inner'><tr><td><h1>"+row['dataset']+"</td></tr></h1></table>"+
         "</span></td></tr></table>"+
-        "<table class='back'><tr><td><span>&nbsp;</span></td></tr></table>"+
+        "<table class='back'><tr><td><span><label>Dataset</label></span></td></tr></table>"+
         "</div>"
         );
     });
