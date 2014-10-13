@@ -21,7 +21,7 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'Rockwell',serif;
-  /*font-family: 'Rockwell Std','Rockwell',serif;*/ /* this is the light version of Rockwell */
+  font-family: 'Rockwell Std','Rockwell',serif; /* this is the light version of Rockwell */
 }
 
 div {
