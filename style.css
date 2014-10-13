@@ -138,9 +138,11 @@ table.front {
   margin-bottom: 0.05in;
 }
 table.back {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);  
   height: 3.5in;
   width: 2.5in;
-  margin-top: 0.05in;
+  margin-top: 0in;
 }
 table.front > tbody > tr,
 table.back > tbody > tr {
