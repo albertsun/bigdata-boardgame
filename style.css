@@ -119,8 +119,14 @@ table.back label {
 .dataset-card table.back p {
   width: 1.6in;
   left: 0.40in;
-  top: 1.40in;
+  top: 1.20in;
 }
+.stories-card table.back p {
+  width: 1.6in;
+  left: 0.40in;
+  top: 1.20in;
+}
+
 table.front {
   margin-bottom: 0.05in;
 }
@@ -141,6 +147,10 @@ table h1 {
 }
 .dataset-card table.inner {
   height: 2.85in;
+  width: 2in;
+}
+.stories-card table.inner {
+  height: 3in;
   width: 2in;
 }
 
