@@ -6,6 +6,9 @@
   padding: 0;
   /*margin: 2cm;*/
 }
+@media print {
+  * {-webkit-print-color-adjust:exact;}
+}
 
 * {
   -webkit-box-sizing: border-box;
@@ -95,6 +98,7 @@ table span {
 }
 table.back span {
   /*background-color: #EFEFEF;*/
+  -webkit-print-color-adjust:exact;
   background: url('rockwell-comma.svg') repeat;
   background-size: 0.15in auto;
   background-position: 0.03in 0.02in;
@@ -128,11 +132,18 @@ table.back label {
 }
 
 table.front {
+  height: 3.5in;
+  width: 2.5in;
   margin-bottom: 0.05in;
 }
 table.back {
+  height: 3.5in;
+  width: 2.5in;
   margin-top: 0.05in;
-  content: ",";
+}
+table.front > tbody > tr,
+table.back > tbody > tr {
+  height: 3.5in;
 }
 td {
   vertical-align: middle;
