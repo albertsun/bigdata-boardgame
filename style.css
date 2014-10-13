@@ -34,6 +34,7 @@ div {
   /*margin-top: 0.65in;*/
   margin-bottom: 0.65in;
   text-align: center;
+  page-break-inside: avoid;
 }
 /*div:nth-child(odd) {
   margin-left: 1.23in;
@@ -77,7 +78,7 @@ div:nth-child(4n+1) {
 }*/
 table {
   word-wrap: break-word;
-  page-break-inside: avoid;
+  /*page-break-inside: avoid;*/
 }
 table, tr, td {
   margin: 0;
