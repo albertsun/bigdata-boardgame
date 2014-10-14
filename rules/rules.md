@@ -4,26 +4,15 @@ _For 5 Real-Time, Co-Located Players_
 
 _Ages 13 and up. For players under the age of 13, please visit our COPPA compliance for a parent or legal guardian to provide verifiable consent._
 
-&nbsp;
-
 ### Overview
 
-1. Each player is given a starting set of 5 randomized Personally Identifiable Information cards (PII) to represent their person (Consumer) and 12Ƀ (bitcoins) with which to buy data sets.
-2. The game is played in a series of rounds consisting of a dataset auction, collecting data from other players, and telling stories about the other players. At the end of each round, each player collects two new PII cards, and a new round begins. This continues until all data sets have been auctioned off.
-3. Buying data sets gets you access to any matching Personally Identifiable Information from other players’ hands. Players with PII cards that match your data set must show you their matching cards.
-4. Players are given the opportunity to tell a story about another player, using the information they have collected about that other player. The story may be refuted if the player who is the subject of the story has a PII card that contradicts the story.
-5. A successfully told story means a WIN and 5Ƀ for the storyteller and a FAIL for the consumer. A successfully defended story means a WIN for the consumer and a FAIL for the storyteller.
-6. The game is played until the end of the round where all data sets have been auctioned off or someone flips the table in a fit of rage. In the case of the latter, that person is to be referred to as Richard Stallman for the rest of the night.
+The goal of the game is to successfully use data to tell a revealing stories about another player. Success of each story is judged by the non-involed players.
 
-&nbsp;
+The game proceeds in rounds of buying datasets to reveal other player's personally identifiable information, and using that information to tell stories.
 
-&nbsp;
+Each dataset card that goes up for auction has corresponding personally identifiable information cards. When a player, buys a dataset at auction, every other player who holds a matching datapoint must reveal it to the new owner of the dataset.
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;
+The game goes on until data sets have been auctioned off or someone flips the table in a fit of rage. In the case of the latter, that person is to be referred to as Richard Stallman for the rest of the night.
 
 ### Contents
 
@@ -31,6 +20,17 @@ _Ages 13 and up. For players under the age of 13, please visit our COPPA complia
 * 22 Dataset cards
 * 25 Story cards
 * 110 Personally Identifiable Information (PII) cards
+* Bitcoins and player tokens
+
+&nbsp;
+
+![Tokens](tokens.svg "Mouse Pancake Server Mouse Unicorn")
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 
 &nbsp;
 
@@ -39,7 +39,7 @@ _Ages 13 and up. For players under the age of 13, please visit our COPPA complia
 1. Set the board out on the table. You are very good at following directions.
 2. Shuffle each of the 3 sets of cards. Set the story and dataset cards on the bord and the PII cards aside to draw from.
 3. Create your Bitcoin Blockchain (Bank) consisting of Bitcoin tokens on the side of the board, along side your repository of WIN/FAIL tokens and Dataset Claim tokens
-4. Each player draws 5 randomized Personal Identification Cards to represent their persona and take 12 Ƀ tokens (Bitcoins). They are also given a Data Warehouse (notebook) to record the data they collect about other players.
+4. Each player draws 5 randomized Personal Identification Cards to represent their persona and takes 12 Ƀitcoin tokens. They are also given a data warehouse (notebook) to record the data they collect about other players.
 
 Now you’re ready to play!
 
