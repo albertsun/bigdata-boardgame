@@ -19,35 +19,28 @@ _Ages 13 and up. For players under the age of 13, please visit our COPPA complia
 
 6. The game is played until the end of the round where all data sets have been auctioned off or someone flips the table in a fit of rage. In the case of the latter, that person is to be referred to as Richard Stallman for the rest of the night.
 
-7. The winner is whichever player who has the greatest number of WINs minus their FAILs.
-
 &nbsp;
 
 &nbsp;
 
 &nbsp;
 
-&nbsp;
+### Contents
 
-#### How to Collect Data
-
-1. Auction - Buying other players’ PII en masse. 
-
-2. Web Scraping - as you overhear other players telling stories about others or refuting 
-
-3. Open Data - Players can choose to reveal their own personal information cards in exchange for digital cash. The fixed rate for revealing any PII card as Open Data is 3 Ƀ coins (bitcoins)
+* One board
+* 22 Dataset cards
+* 25 Story cards
+* 110 Personally Identifiable Information (PII) cards
 
 ### Game Setup
 
 1. Set the board out on the table. You are very good at following directions.
 
-2. Shuffle each of the 3 sets of cards. There are 110 Personally Identifiable Information cards, 22 Dataset cards, and 25 Story cards.
+2. Shuffle each of the 3 sets of cards. Set the story and dataset cards on the bord and the PII cards aside to draw from.
 
-3. Place the Data cards and Story cards on the board
+3. Create your Bitcoin Blockchain (Bank) consisting of Bitcoin tokens on the side of the board, along side your repository of WIN/FAIL tokens and Dataset Claim tokens
 
-4. Create your Bitcoin Blockchain (Bank) consisting of Bitcoin tokens on the side of the board, along side your repository of WIN/FAIL tokens and Dataset Claim tokens
-
-5. Each player begins with 5 randomized Personal Identification Cards to represent their persona and earns 12 Ƀ tokens (Bitcoins) for their Startup. They are also given a Data Warehouse (notebook) to record any data they collect about other players.
+4. Each player draws 5 randomized Personal Identification Cards to represent their persona and take 12 Ƀ tokens (Bitcoins). They are also given a Data Warehouse (notebook) to record the data they collect about other players.
 
 Now you’re ready to play!
 
@@ -90,6 +83,8 @@ Now you’re ready to play!
 
 8. If the subject can successfully refute the story, they get a win token but no additional Ƀ coins (Bitcoins). The storyteller gets a fail token.
 
+Like web scraping, other players listening in to gather data is fair game.
+
 
 ##### Selling Your Data and Opening Your Data
 
@@ -109,13 +104,13 @@ Subsequently, if someone wishes to sell a PII card from a sold data set, it must
 
 ##### Open Data
 
-A player may opt to release their PII as Open Data. That player will announce the contents of their card and place it face up on the table in front of them.
+A player may opt to release their PII as Open Data. That player announces the contents of their card and place it face up on the table in front of them.
 
 Releasing a PII card as Open Data is always worth 3 Ƀ coins.
 
 ##### Additional PII Cards
 
-At the end of each round, each player is given 2 additional randomized PII cards to add to their hand.
+At the end of each round, each player draws 2 additional PII cards to add to their hand.
 
 *Play additional rounds until all data sets have been sold*
 
@@ -125,9 +120,9 @@ At the end of each round, each player is given 2 additional randomized PII cards
 
 ## End of the Game
 
-1. The game continues until all of the data sets have been auctioned off and a final round has been played. 
+1. When all data sets have been bought, there is a final round of data collection and storytelling.
 
-2. At the end of the final round, players tally win tokens minus fail tokens to determine the final score. 
+2. At the end, a player's score is their number of win tokens minus their number of fail tokens.
 
 3. The player with the highest score wins. 
 
