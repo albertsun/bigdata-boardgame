@@ -1,21 +1,8 @@
-# Big Data: the Board Game: The Rulebook
+# Rules
 
 For 5 Real-Time, Co-Located Players
+
 Ages 13 and up. For players under the age of 13, please visit our COPPA compliance for a parent or legal guardian to provide verifiable consent.
-
----
-
-## Background:
-
-Big Data: The Board Game is a game of linking fragmented data points, obtaining personally identifiable information, and storytelling.
-
-You play as an aspiring Data Startup, ready to change the world by improving omnichannel analytics across the consumer data ecosystem. You buy datasets in a series of real-time auctions which can contain the personally identifiable information about consumers which your data scientists can use to build micro-targeted profiles on individuals. The more you collect on these consumers, the easier it is to tell stories about them.
-
-But you’re not just a company; you’re also a person. As you go about your life, you produce data points, data points which are rolled up into data sets that are sold to companies and campaigns without your input. Often these data points, when put together, can create an inaccurate or incomplete portrayal of who you are and will be used in ways you never intended.
-
-As a Data Startup you’re trying to tell stories about other players to sell them things or make decisions about them. But as a person you’re trying to live a simple 
-
-Get ready to Disrupt Everything! 
 
 ## General Overview
 
@@ -44,12 +31,17 @@ Open Data - Players can choose to reveal their own personal information cards in
 ### Game Setup
 
 Set the board out on the table. You are very good at following directions.
+
 Shuffle each of the 3 sets of cards:
-Personally Identifiable Information cards (110)
-Data cards (22)
-Story cards (25)
+
+* Personally Identifiable Information cards (110)
+* Data cards (22)
+* Story cards (25)
+
 Place the Data cards and Story cards on the board
+
 Create your Bitcoin Blockchain (Bank) consisting of Bitcoin tokens on the side of the board, along side your repository of WIN/FAIL tokens and Dataset Claim tokens
+
 Each player begins with 5 randomized Personal Identification Cards to represent their persona and earns 12 Ƀ tokens (Bitcoins) for their Startup. They are also given a Data Warehouse (notebook) to record any data they collect about other players.
 Now you’re ready to play!
 
@@ -110,6 +102,9 @@ Releasing a PII card as Open Data is always worth 3 Ƀ coins.
 
 ## End of the Game
 The game continues until all of the data sets have been auctioned off and a final round has been played. 
+
 At the end of the final round, players tally win tokens minus fail tokens to determine the final score. 
+
 The player with the highest score wins. 
+
 Everyone else loses. But at least they get easy photo sharing!

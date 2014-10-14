@@ -13,40 +13,50 @@
       return ".page[data-num="+rules_pages[0]+"] .inner";
     }
     var html_lines = html.split("\n");
-    console.log(html_lines.length);
-
-    $("body").prepend("<div id='ruler'></div>");
+    // console.log(html_lines.length);
+    var ruler_id = "ruler"+_.uniqueId();
+    $("body").prepend("<div id='"+ruler_id+"'></div>");
 
     for (var i=0;i<html_lines.length;i++) {
-      var curr_selector = curr_page();
-      console.log(curr_selector, $(curr_selector).find(".wrap").height(), $(curr_selector).height());
-      $("#ruler").html(html_lines[i]);
-      if (($("#ruler").height() + 5 + $(curr_selector).find(".wrap").height()) < $(curr_selector).height()) {
+      var curr_selector = curr_page(),
+          curr_wrap_height = $(curr_selector).find(".wrap").height(),
+          curr_height = $(curr_selector).height();
+      console.log(curr_selector, curr_wrap_height, curr_height);
+      $("#"+ruler_id).html(html_lines[i]);
+      if ((($("#"+ruler_id).height()*2) + curr_wrap_height) < curr_height) {
         $(curr_page()).find(".wrap").append(html_lines[i]);
       } else {
         rules_pages.shift();
         $(curr_page()).find(".wrap").append(html_lines[i]);
       }
     }
-    $("#ruler").remove();
+    $("#"+ruler_id).remove();
   }
-  $.ajax({url: "rules.md"}).done(function(markdown_file) {
-    var converter = new Showdown.converter();
-    // $("article").append(converter.makeHtml(markdown_file));
-    var html = converter.makeHtml(markdown_file);
-    // console.log(html);
-    add_html(html, [2,3,4,5,6]);
-  })
+  function layout_page(mdfile, pages) {
+    $.ajax({url: mdfile}).done(function(markdown_file) {
+      var converter = new Showdown.converter();
+      // $("article").append(converter.makeHtml(markdown_file));
+      var html = converter.makeHtml(markdown_file);
+      // console.log(html);
+      add_html(html, pages);
+    });  
+  }
+  layout_page("background.md", [2]);
+  layout_page("rules.md", [3,4,5,6]);
+  layout_page("credits.md", [7]);
 </script>
 </head>
 <body>
 
 <div class="sheet">
   <div class="page" data-num="8"><div class="inner"><div class="wrap">
-    <h1>BACK COVER</h1>
+    <!-- <h1>BACK COVER</h1> -->
+    <p style="position:absolute;bottom:0;margin:0;">a csv soundsystem production</p>
   </div></div></div>
   <div class="page" data-num="1"><div class="inner"><div class="wrap">
-    <h1>FRONT COVER</h1>
+    <h1 style="text-align:center;font-size:0.5in;line-height:0.5in;margin:1in 0 0 0.65in;">Big Data</h1>
+    <h2 style="text-align:center;font-size:0.25in;line-height:0.25in;margin:0.1in 0 0 0.65in;">The Board Game</h2>
+    <img src="rockwell-comma.svg" style="width: 2in; height: auto; position: absolute;top:2in;left:0.7in;" />
   </div></div></div>
 </div>
 
@@ -54,7 +64,6 @@
   <div class="page" data-num="2"><div class="inner"><div class="wrap">
   </div></div></div>
   <div class="page" data-num="7"><div class="inner"><div class="wrap">
-    <h1>ACKNOWLEDGEMENTS</h1>
   </div></div></div>
 </div>
 

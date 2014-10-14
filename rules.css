@@ -11,15 +11,22 @@ body {
   margin: 0;
   padding: 0;
   font-family: Helvetica, sans-serif;
-  font-size: 0.15in;
+  font-size: 8pt;
+  line-height: 12pt;
 }
-p {
-  margin: 0 0 1em 0;
+p, li {
+  margin: 0 0 0.75em 0;
   padding: 0;
+  text-align: justify;
+  font-weight: 100;
+}
+li {
+  list-style: none;
+  margin: 0 0 0.5em 0;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Rockwell',serif;
-  margin: 0 0 1em 0;
+  margin: 0.5em 0 1em 0;
   padding: 0;
 }
 
@@ -44,31 +51,41 @@ div.page {
   height: 8.5in;
   width: 5.5in;
   margin: 0;
-  padding: 0.5in;
+  padding: 1in;
   outline: 1px solid black;
 }
 div.page:nth-child(odd) {
   position: absolute;
   left: 0in;
   top: 0in;
+  padding-right: 1in;
 }
 div.page:nth-child(even) {
   position: absolute;
   left: 5.5in;
   top: 0in;
+  padding-left: 1in;
 }
 div.inner {
   outline: 1px dotted red;
-  height: 7.5in;
-  width: 4.5in;
-  /*position: absolute;*/
+  height: 6.5in;
+  width: 3.5in;
+  position: relative;
   /*top: 0.5in;*/
   /*left: 0in;*/
   overflow: hidden
 }
-div.wrap {
+/*div.wrap {
   max-height: 7.5in;
+}*/
+
+div.page[data-num='8'] .inner {
+  /*-webkit-print-color-adjust:exact;
+  background: url('rockwell-comma.svg') repeat;
+  background-size: 0.15in auto;
+  background-position: 0.03in 0.02in;*/
 }
+
 
 @media print {
   * {-webkit-print-color-adjust:exact;}
@@ -78,5 +95,8 @@ div.wrap {
   }
   div.page:before {
     content: "";
+  }
+  div.inner {
+    overflow: visible;
   }
 }
