@@ -1,0 +1,76 @@
+<html>
+<head>
+<link href="rules.css" rel="stylesheet" type="text/css" />
+<script src="libs/jquery-2.1.1.min.js"></script>
+<script src="libs/underscore-min.js"></script>
+<script src="libs/showdown.js"></script>
+<script>
+  
+  
+  function add_html(html, rules_pages) {
+    // var rules_pages = [2,3,4,5,6];
+    function curr_page() {
+      return ".page[data-num="+rules_pages[0]+"] .inner";
+    }
+    var html_lines = html.split("\n");
+    console.log(html_lines.length);
+
+    $("body").prepend("<div id='ruler'></div>");
+
+    for (var i=0;i<html_lines.length;i++) {
+      var curr_selector = curr_page();
+      console.log(curr_selector, $(curr_selector).find(".wrap").height(), $(curr_selector).height());
+      $("#ruler").html(html_lines[i]);
+      if (($("#ruler").height() + 5 + $(curr_selector).find(".wrap").height()) < $(curr_selector).height()) {
+        $(curr_page()).find(".wrap").append(html_lines[i]);
+      } else {
+        rules_pages.shift();
+        $(curr_page()).find(".wrap").append(html_lines[i]);
+      }
+    }
+    $("#ruler").remove();
+  }
+  $.ajax({url: "rules.md"}).done(function(markdown_file) {
+    var converter = new Showdown.converter();
+    // $("article").append(converter.makeHtml(markdown_file));
+    var html = converter.makeHtml(markdown_file);
+    // console.log(html);
+    add_html(html, [2,3,4,5,6]);
+  })
+</script>
+</head>
+<body>
+
+<div class="sheet">
+  <div class="page" data-num="8"><div class="inner"><div class="wrap">
+    <h1>BACK COVER</h1>
+  </div></div></div>
+  <div class="page" data-num="1"><div class="inner"><div class="wrap">
+    <h1>FRONT COVER</h1>
+  </div></div></div>
+</div>
+
+<div class="sheet">
+  <div class="page" data-num="2"><div class="inner"><div class="wrap">
+  </div></div></div>
+  <div class="page" data-num="7"><div class="inner"><div class="wrap">
+    <h1>ACKNOWLEDGEMENTS</h1>
+  </div></div></div>
+</div>
+
+<div class="sheet">
+  <div class="page" data-num="4"><div class="inner"><div class="wrap">
+  </div></div></div>
+  <div class="page" data-num="5"><div class="inner"><div class="wrap">
+  </div></div></div>
+</div>
+
+<div class="sheet">
+  <div class="page" data-num="6"><div class="inner"><div class="wrap">
+  </div></div></div>
+  <div class="page" data-num="3"><div class="inner"><div class="wrap">
+  </div></div></div>
+</div>
+
+</body>
+</html>

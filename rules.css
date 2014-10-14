@@ -1,0 +1,82 @@
+@page {
+  size: 11in 8.5in;
+  margin: 0;
+  padding: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.15in;
+}
+p {
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rockwell',serif;
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+
+div.sheet {
+  height: 8.5in;
+  width: 11in;
+  position: relative;
+  display: block;
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+div.page:before {
+  content: attr(data-num);
+  height: 0;
+  overflow: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+div.page {
+  height: 8.5in;
+  width: 5.5in;
+  margin: 0;
+  padding: 0.5in;
+  outline: 1px solid black;
+}
+div.page:nth-child(odd) {
+  position: absolute;
+  left: 0in;
+  top: 0in;
+}
+div.page:nth-child(even) {
+  position: absolute;
+  left: 5.5in;
+  top: 0in;
+}
+div.inner {
+  outline: 1px dotted red;
+  height: 7.5in;
+  width: 4.5in;
+  /*position: absolute;*/
+  /*top: 0.5in;*/
+  /*left: 0in;*/
+  overflow: hidden
+}
+div.wrap {
+  max-height: 7.5in;
+}
+
+@media print {
+  * {-webkit-print-color-adjust:exact;}
+  div.inner,
+  div.page {
+    outline: none;
+  }
+  div.page:before {
+    content: "";
+  }
+}
