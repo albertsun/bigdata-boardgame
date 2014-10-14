@@ -54,6 +54,16 @@ div.sheet {
   margin: 0;
   padding: 0;
 }
+
+
+/* this may be necessary for
+two sided printing to have right orientation */
+div.sheet:nth-child(even) {
+/*  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);*/
+}
+
+
 div.page:before {
   content: attr(data-num);
   height: 0;
