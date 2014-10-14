@@ -8,6 +8,8 @@
   
   
   function add_html(html, rules_pages) {
+    console.log(html);
+    html = html.replace(/>\s+<li/ig,'><li')
     // var rules_pages = [2,3,4,5,6];
     function curr_page() {
       return ".page[data-num="+rules_pages[0]+"] .inner";

@@ -25,6 +25,10 @@ _Ages 13 and up. For players under the age of 13, please visit our COPPA complia
 
 &nbsp;
 
+&nbsp;
+
+&nbsp;
+
 ### Contents
 
 * One board
@@ -44,6 +48,8 @@ _Ages 13 and up. For players under the age of 13, please visit our COPPA complia
 
 Now you’re ready to play!
 
+&nbsp;
+
 ### First Round
 
 ##### Auction
@@ -55,6 +61,8 @@ Now you’re ready to play!
 3. The winner of each auction takes their winning Data card and places it on the table in front of them. They place the winning amount of Bitcoins into the Blockchain.
 
 4. The process is repeated until four data sets have been auctioned.
+
+&nbsp;
 
 ##### Data Collection
 

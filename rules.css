@@ -20,10 +20,17 @@ p, li {
   text-align: justify;
   font-weight: 100;
 }
-li {
+ol li {
+  list-style: decimal outside;
+  margin-left: 2em;
+}
+ul li {
   list-style: none;
+}
+li {
   margin: 0 0 0.5em 0;
 }
+ol,
 ul {
   margin: 0;
   padding: 0;
