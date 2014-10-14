@@ -17,6 +17,8 @@
     var ruler_id = "ruler"+_.uniqueId();
     $("body").prepend("<div id='"+ruler_id+"'></div>");
 
+    var toolong = false;
+
     for (var i=0;i<html_lines.length;i++) {
       var curr_selector = curr_page(),
           curr_wrap_height = $(curr_selector).find(".wrap").height(),
@@ -26,11 +28,19 @@
       if ((($("#"+ruler_id).height()*2) + curr_wrap_height) < curr_height) {
         $(curr_page()).find(".wrap").append(html_lines[i]);
       } else {
+        if (rules_pages.length === 0) {
+          console.log(html_lines[i], "too long!");
+          toolong = true;
+        }
         rules_pages.shift();
         $(curr_page()).find(".wrap").append(html_lines[i]);
       }
     }
     $("#"+ruler_id).remove();
+    if (toolong === true) {
+      alert("Too long!");
+      $(".page").css({"background-color":"rgba(255,0,0,0.1)"})
+    }
   }
   function layout_page(mdfile, pages) {
     $.ajax({url: mdfile}).done(function(markdown_file) {
@@ -41,7 +51,7 @@
       add_html(html, pages);
     });  
   }
-  layout_page("background.md", [2]);
+  layout_page("introduction.md", [2]);
   layout_page("rules.md", [3,4,5,6]);
   layout_page("credits.md", [7]);
 </script>
