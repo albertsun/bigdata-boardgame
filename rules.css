@@ -59,8 +59,8 @@ div.sheet {
 /* this may be necessary for
 two sided printing to have right orientation */
 div.sheet:nth-child(even) {
-/*  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);*/
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 
